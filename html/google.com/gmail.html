@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gmail Inspirado</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f3f4;
+        }
+
+        /* Barra de navegación superior */
+        .nav-bar {
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 100;
+        }
+
+        .nav-bar img {
+            width: 120px; /* Logo */
+        }
+
+        .nav-bar .search-bar {
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .nav-bar .search-bar input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .nav-bar .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-bar .nav-links a {
+            text-decoration: none;
+            color: #0073bb;
+            font-size: 14px;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 70px; /* Espacio para la barra de navegación */
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        /* Sección izquierda (Lista de correos) */
+        .left-section {
+            width: 250px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .left-section h2 {
+            font-size: 20px;
+            color: #202124;
+            margin-bottom: 20px;
+        }
+
+        .left-section .email-item {
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .left-section .email-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        /* Sección central (Vista de correos) */
+        .center-section {
+            flex-grow: 1; /* Para que ocupe el espacio restante */
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .center-section h2 {
+            font-size: 24px;
+            color: #202124;
+        }
+
+        .email-view {
+            margin-top: 20px;
+        }
+
+        .email-view h3 {
+            margin: 0;
+            font-size: 20px;
+            color: #0073bb;
+        }
+
+        .email-view p {
+            font-size: 14px;
+            color: #333;
+            margin: 5px 0;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #657786;
+            font-size: 12px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación superior -->
+    <header class="nav-bar">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Gmail_Logo.svg/2560px-Gmail_Logo.svg.png" alt="Logo Gmail">
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar correos...">
+        </div>
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Enviar</a>
+            <a href="#">Configuración</a>
+        </div>
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="main-container">
+
+        <!-- Sección izquierda: Lista de correos -->
+        <div class="left-section">
+            <h2>Correos</h2>
+            <div class="email-item">Correo 1 - Asunto del correo</div>
+            <div class="email-item">Correo 2 - Asunto del correo</div>
+            <div class="email-item">Correo 3 - Asunto del correo</div>
+            <div class="email-item">Correo 4 - Asunto del correo</div>
+            <div class="email-item">Correo 5 - Asunto del correo</div>
+        </div>
+
+        <!-- Sección central: Vista de correos -->
+        <div class="center-section">
+            <h2>Vista de Correo</h2>
+            <div class="email-view">
+                <h3>Asunto del Correo</h3>
+                <p>De: ejemplo@correo.com</p>
+                <p>Fecha: 1 de enero de 2024</p>
+                <p>Este es el contenido del correo. Aquí puedes leer el mensaje completo.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        Gmail Inspirado &copy; 2024
+    </footer>
+
+</body>
+</html>

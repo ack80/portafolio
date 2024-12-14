@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Google Inspirado</title>
+  <style>
+    /* Estilos básicos */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    /* Estilo del contenedor principal */
+    .main-container {
+      text-align: center;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    /* Logo */
+    .logo img {
+      width: 250px;
+    }
+
+    /* Barra de búsqueda */
+    .search-bar {
+      margin: 20px 0;
+    }
+
+    .search-bar input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #d9d9d9;
+      border-radius: 24px;
+      font-size: 16px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Botones de búsqueda */
+    .search-buttons {
+      margin-top: 20px;
+    }
+
+    .search-buttons button {
+      padding: 10px 20px;
+      margin: 0 10px;
+      border: 1px solid #d9d9d9;
+      background-color: #f8f8f8;
+      font-size: 14px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .search-buttons button:hover {
+      background-color: #e8e8e8;
+    }
+
+    /* Footer */
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 10px;
+      font-size: 12px;
+      color: #666;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      margin-top: 5px;
+    }
+
+    .footer-links a {
+      color: #666;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor principal: logo, barra de búsqueda y botones -->
+  <div class="main-container">
+    
+    <!-- Logo central -->
+    <div class="logo">
+      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google">
+    </div>
+
+    <!-- Barra de búsqueda central -->
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar en Google">
+    </div>
+
+    <!-- Botones de búsqueda y 'Voy a tener suerte' -->
+    <div class="search-buttons">
+      <button>Buscar con Google</button>
+      <button>Voy a tener suerte</button>
+    </div>
+
+  </div>
+
+  <!-- Pie de página con enlaces secundarios -->
+  <footer class="footer">
+    <p>Google Inspirado &copy; 2024</p>
+    <div class="footer-links">
+      <a href="#">Publicidad</a>
+      <a href="#">Negocios</a>
+      <a href="#">Privacidad</a>
+      <a href="#">Términos</a>
+    </div>
+  </footer>
+
+</body>
+</html>
