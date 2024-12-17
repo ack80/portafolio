@@ -1,0 +1,26 @@
+name: HTML CI/CD Pipeline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Clona el repositorio
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # 2. Valida que los archivos HTML existan en la carpeta 'html'
+      - name: Check for HTML files in html directory
+        run: |
+          if [ -f "html/gmail.html" ] && [ -f "html/google.html" ]; then
+            echo "HTML files exist in the 'html' directory. ✅"
+          else
+            echo "Missing HTML files in the 'html' directory. ❌"
+            exit 1
+          fi
